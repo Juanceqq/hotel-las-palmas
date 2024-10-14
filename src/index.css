@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Catchy Mager";
+  src: url("./fonts/Catchy-Mager-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Coco Gothic";
+  src: url(./fonts/coco-gothic.regular.ttf);
+}
