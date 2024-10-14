@@ -39,18 +39,10 @@ export default defineComponent({
     const textOne = ref(null)
     const textTwo = ref(null)
     const textThree = ref(null)
-    const contactButton = ref(null)
-
-    // const scrollToBottom = (() => {
-    //   Window.scrollTo(0, 0)
-    // })
 
     onMounted(() => {
       const textElements = [textOne.value, textTwo.value, textThree.value]
 
-      // const tl = gsap.timeline({
-      //   delay: 0.5
-      // })
       const tl = gsap.timeline({
         delay: 0
       })
@@ -69,19 +61,6 @@ export default defineComponent({
           stagger: 0.1,
         }
       )
-      tl.fromTo(
-        contactButton.value,
-        {
-          rotationY: -90,
-          opacity: 0
-        },
-        {
-          ease: 'expo.out',
-          opacity: 100,
-          rotationY: 0,
-          duration: 1.5,
-        }
-      )
     })
 
 
@@ -89,7 +68,6 @@ export default defineComponent({
       textOne,
       textTwo,
       textThree,
-      contactButton,
     }
   }
 });
