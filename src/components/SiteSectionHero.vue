@@ -12,12 +12,12 @@
           <p ref="textThree" class="text-2xl lg:text-3xl">Spa & Resort</p>
 
         </div>
-        <div>
+        <!-- <div>
           <button ref="contactButton"
             class="font-coco font-semibold text-md tracking-wider hover:bg-primary-400 hover:text-white transition-colors duration-500 bg-white text-primary px-10 py-3 rounded-sm">
             Contáctanos
           </button>
-        </div>
+        </div> -->
       </div>
     </template>
   </SiteSection>
@@ -40,6 +40,10 @@ export default defineComponent({
     const textTwo = ref(null)
     const textThree = ref(null)
     const contactButton = ref(null)
+
+    // const scrollToBottom = (() => {
+    //   Window.scrollTo(0, 0)
+    // })
 
     onMounted(() => {
       const textElements = [textOne.value, textTwo.value, textThree.value]
@@ -85,7 +89,7 @@ export default defineComponent({
       textOne,
       textTwo,
       textThree,
-      contactButton
+      contactButton,
     }
   }
 });

@@ -4,7 +4,7 @@
       <div class="w-full h-full bg-primary" />
     </template>
     <template #container>
-      <div class="flex flex-col px-10 2xl:px-48 py-10 lg:py-20">
+      <div id="siteFooter" class="flex flex-col px-10 2xl:px-48 py-10 lg:py-20">
         <div>
           <p class="2xl:text-7xl xl:text-5xl text-4xl text-white font-catchy">Hotel las palmas</p>
         </div>
@@ -16,19 +16,20 @@
               </p>
               <div class="flex items-center gap-3 pt-3">
                 <Icon icon="mdi:location" width="1.2em" height="1.2em" style="color: white" />
-                <p class="text-white font-coco ">
+                <a href="https://maps.app.goo.gl/UxJH5CLuXtNgJdyt7" target="_blank" class="text-white font-coco ">
                   Av Miguel Aleman <a class="font-serif">232</a>.<br /> Mazatlan, Sinaloa
-                </p>
+                </a>
               </div>
               <div class="flex items-center gap-3">
                 <Icon icon="mingcute:cellphone-2-fill" width="1.2em" height="1.2em" style="color: white" />
-                <p class="font-serif text-white">
+                <a href="tel:123-456-7890" class="font-serif text-white">
                   1123-456-7890
-                </p>
+                </a>
               </div>
               <div class="flex items-center gap-3">
                 <Icon icon="material-symbols-light:mail" width="1.2em" height="1.2em" style="color: white" />
-                <p class="font-coco text-white">hello<a class="font-serif">@</a>laspalmas.com</p>
+                <a href="mailto:hello@laspalmas.com" class="font-coco text-white">hello<a
+                    class="font-serif">@</a>laspalmas.com</a>
               </div>
             </div>
           </div>
@@ -58,13 +59,16 @@
                 Nuestras redes:
               </p>
               <div class="flex gap-12 pt-3">
-                <a class="w-14 h-14 border-white border rounded-full flex items-center justify-center">
+                <a href="http://www.facebook.com" target="_blank"
+                  class="w-14 h-14 hover:scale-105 border-white border rounded-full flex items-center justify-center">
                   <Icon icon="ic:baseline-facebook" width="384" height="384" style="color: white" class="p-2" />
                 </a>
-                <a class="w-14 h-14 border-white border rounded-full flex items-center justify-center">
-                  <Icon icon="mdi:twitter" width="384" height="384" style="color: white" class="p-2" />
+                <a href="http://www.x.com" target="_blank"
+                  class="w-14 h-14 hover:scale-105 border-white border rounded-full flex items-center justify-center">
+                  <Icon icon="prime:twitter" width="384" height="384" style="color: white" class="p-3" />
                 </a>
-                <a class="w-14 h-14 border-white border rounded-full flex items-center justify-center">
+                <a href="http://www.instagram.com" target="_blank"
+                  class="w-14 h-14 hover:scale-105 border-white border rounded-full flex items-center justify-center">
                   <Icon icon="mdi:instagram" width="384" height="384" style="color: white" class="p-2" />
                 </a>
               </div>
@@ -91,10 +95,5 @@ export default defineComponent({
     SiteSection,
     Icon
   },
-
-  setup() {
-
-    return {}
-  }
 })
 </script>
