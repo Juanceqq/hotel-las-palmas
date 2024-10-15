@@ -17,7 +17,10 @@
               <div class="flex items-center gap-3 pt-3">
                 <Icon icon="mdi:location" width="1.2em" height="1.2em" style="color: white" />
                 <a href="https://maps.app.goo.gl/UxJH5CLuXtNgJdyt7" target="_blank" class="text-white font-coco ">
-                  Av Miguel Aleman <p class="font-serif">232</p>.<br /> Mazatlan, Sinaloa
+                  <h1 class="flex gap-2">Av Miguel Aleman
+                    <p class="font-serif"> 232</p>
+                  </h1>
+                  <h1>Mazatlan, Sinaloa</h1>
                 </a>
               </div>
               <div class="flex items-center gap-3">
@@ -28,7 +31,7 @@
               </div>
               <div class="flex items-center gap-3">
                 <Icon icon="material-symbols-light:mail" width="1.2em" height="1.2em" style="color: white" />
-                <a href="mailto:hello@laspalmas.com" class="font-coco text-white">hello<p class="font-serif">@</p>
+                <a href="mailto:hello@laspalmas.com" class="font-coco flex text-white">hello<p class="font-serif">@</p>
                   laspalmas.com</a>
               </div>
             </div>
